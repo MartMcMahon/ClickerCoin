@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="block" *ngFor="let block of blocksMined.slice(-3)">
+    <p>
+      {{ block['index'] }}
+    </p>
+    <p>
+      {{ block['text'] }}
+    </p>
+  </div>
+  <button mat-raised-button color="primary" (click)="onMineClick()">
+    MINE
+  </button>
+</div>
